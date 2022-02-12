@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: #D6E4F0;
+    width:60px;
+    height: 100vh;
+    right: 0;
+
+
+}
+
+.buttons {
+    position: relative;
+    margin: 10px 15px 10px;
+    padding: 10px 0 10px;
+    width: 80%;
+    height: 30px;
+
+}
+
+.buttons:hover {
+    background-color: white;
+    color: black;
+    opacity: 50%;
+    border-radius: 20px;
+}
+
+.home{
+
+}
+
+.expand { 
+    animation: slide 1s;
+    width:250px;
+    text-align: left;
+}
+
+
+@keyframes slide {
+    0% {width: 60px}
+    100% {width: 250px}
+}
+
+.icon-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    width: 150px;
+    height: 25px;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.buttons input {
+    top: 15px;
+}
+
+.buttons.search {
+    opacity: 100;
+    background-color: transparent;
+}
+
